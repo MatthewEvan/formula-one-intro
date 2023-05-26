@@ -33,10 +33,10 @@
 	</div>
 	<ul class="nav-links {ClickedNavLinks}">
 		<li><a href="/">Home</a></li>
-		<li><a href="/history-section">History</a></li>
-		<li><a href="/circuits-section">Circuits</a></li>
-		<li><a href="/drivers-section">Drivers</a></li>
-		<li><a href="/about-section">About</a></li>
+		<li><a href="/history">History</a></li>
+		<li><a href="/circuits">Circuits</a></li>
+		<li><a href="/drivers">Drivers</a></li>
+		<li><a href="/about">About</a></li>
 	</ul>
 </div>
 
