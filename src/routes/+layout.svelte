@@ -1,3 +1,8 @@
+<script>
+    import Navbar from "$components/Navbar.svelte";
+    import Footer from "$components/Footer.svelte";
+</script>
+
 <svelte:head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
@@ -6,7 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </svelte:head>
 
+<Navbar/>
 <slot/>
+<Footer/>
 
 <style>
     :global(*, *::before, *::after) {
