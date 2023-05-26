@@ -12,7 +12,9 @@
 </svelte:head>
 
 <Navbar/>
-<slot/>
+<div class="readable-area">
+    <slot/>
+</div>
 <Footer/>
 
 <style>
@@ -26,8 +28,17 @@
     :global(html, body) {
         width: 100%;
         height: 100%;
+        scroll-behavior: smooth;
     }
     :global(a) {
         text-decoration: none;
+    }
+    .readable-area {
+        padding-top: 4.5rem;
+    }
+    @media screen and (max-width: 768px) {
+        :global(*, *::before, *::after) {
+            font-size: 12px;
+        }
     }
 </style>
