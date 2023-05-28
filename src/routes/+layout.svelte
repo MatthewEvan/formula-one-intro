@@ -6,7 +6,7 @@
 <svelte:head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Formula 1 Introduction</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </svelte:head>
@@ -29,6 +29,7 @@
         width: 100%;
         height: 100%;
         scroll-behavior: smooth;
+        background-color: hsl(350, 100%, 95%);
     }
     :global(a) {
         text-decoration: none;
