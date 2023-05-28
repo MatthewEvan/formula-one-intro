@@ -131,7 +131,7 @@
 	.arrow-menu {
 		width: 5rem;
 		height: 100%;
-		background-color: white;
+		background-color: hsla(0, 0%, 95%);
 		border-radius: 50rem;
 		display: grid;
 		place-items: center;
@@ -147,6 +147,7 @@
 		padding: 0.2rem 0.3rem;
 		border: solid 3px hsl(0, 0%, 100%);
 		outline: solid 1.5px hsl(240, 67%, 2%);
+		background-color: hsla(0, 0%, 95%);
 	}
 
 	.nav-links {
@@ -164,6 +165,7 @@
 		color: hsl(240, 67%, 2%);
 		font-weight: 500;
 		height: 2.5rem;
+		background-color: hsla(0, 0%, 95%);
 		border-radius: 50rem;
 		border: solid 3px hsl(0, 0%, 100%);
 		outline: solid 1.5px hsl(240, 67%, 2%);
