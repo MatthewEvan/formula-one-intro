@@ -272,7 +272,7 @@
 			border: solid 3px hsl(0, 0%, 100%);
 			outline: solid 1.5px hsl(240, 67%, 2%);
 			background-color: hsla(0, 0%, 100%, 0.5);
-			backdrop-filter: blur(2px);
+			backdrop-filter: blur(4px);
 			/* transition styles */
 			transition: all 350ms ease-in-out;
 			transform: translateX(101%);
