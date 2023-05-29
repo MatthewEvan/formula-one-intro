@@ -38,7 +38,7 @@
 			</p>
             <div class="discover-more">
                 <a href="#content-overview">Discover More</a>
-                <Icon data={angleDown} scale={1.5} />
+                <Icon data={angleDown} scale={1.5} style="color: hsl(0, 0%, 95%)"/>
             </div>
 		</div>
 		<img src={RedBullRB19} alt="Red Bull RB19" class="redbullrb19" />
@@ -48,7 +48,7 @@
 <style>
 	/* #header #header #header */
 	#header {
-		margin: 2rem 0;
+		margin: 2rem 4rem;
         position: relative;
         z-index: 5;
 	}
@@ -61,21 +61,21 @@
         border-radius: 100%;
 	}
     .circle-bg span:nth-child(1) {
-        width: 22rem;
+        width: 20vw;
         top: 10vh;
         right: 2vw;
         background-color: #ABF74F;
         opacity: 0.75;
     }
     .circle-bg span:nth-child(2) {
-        width: 15rem;
+        width: 15vw;
         top: 5vh;
         left: 2vw;
         background-color: #7daff9;
         opacity: 0.75;
     } 
     .circle-bg span:nth-child(3) {
-        width: 35rem;
+        width: 40vw;
         top: 8vh;
         left: 20vw;
         background-color: #c583ff;
@@ -87,7 +87,7 @@
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
-		gap: 6rem;
+		gap: 3rem;
 	}
 	.header-text {
 		display: flex;
@@ -101,6 +101,7 @@
 		height: 75vh;
 	}
 	.header-text h1 {
+        color: hsl(0, 0%, 95%);
 		font-size: 3rem;
 		text-align: center;
 		font-weight: 700;
@@ -108,7 +109,7 @@
 	}
 	.header-text h1 span {
 		font-size: 4rem;
-		font-weight: 800;
+		font-weight: 900;
         background-image: linear-gradient(
             -135deg,
             #EA1B00,
@@ -122,7 +123,7 @@
         color: transparent;
 	}
     .header-text p {
-        color: #393939;
+        color: #dadada;
         line-height: 1.15;
         font-weight: 500;
         font-size: 1.1rem;
@@ -160,8 +161,40 @@
             #CB1700,
             #A91400
         );
-        box-shadow: 2px 2px 4px hsla(0, 0%, 57%, 0.734);
+        box-shadow: 1px 1px 8px hsla(0, 0%, 6%, 0.75);
     }
 
+    @media screen and (max-width: 1024px) {
+        #header {
+            margin: 2rem;
+        }
+        
+        .main-header {
+            gap: 1.5rem;
+        }
 
+        .mercedesw14, .redbullrb19 {
+            height: 60vh;
+        }
+        .header-text h1 {
+            font-size: 2.5rem;
+        }
+        .header-text h1 span {
+            font-size: 3.5rem;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        #header {
+            margin: 4rem 2.5rem 2rem;
+        }
+        .main-header {
+            flex-direction: column;
+            gap: 0;
+        }
+        .mercedesw14, .redbullrb19 {
+            display: none;
+        }
+
+    }
 </style>
