@@ -10,7 +10,7 @@
 		href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap"
 		rel="stylesheet"
 	>
-	<title>Formula 1 Introduction</title>
+	<title>Formula 1 Guide 2023</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </svelte:head>
 
