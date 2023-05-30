@@ -4,7 +4,7 @@
 
 	import Icon from 'svelte-awesome';
 	import angleDown from 'svelte-awesome/icons/angleDown';
-	import caretDown from 'svelte-awesome/icons/caretDown';
+	import angleDoubleRight from 'svelte-awesome/icons/angleDoubleRight';
 </script>
 
 <div class="main-page">
@@ -60,33 +60,41 @@
 				are fair and enjoyable for all participating in it
 			</p>
 			<a href="#howitworks">
-				<Icon data={caretDown} scale={2} />
+				<Icon data={angleDoubleRight} scale={2} />
 			</a>
 			<img src="https://www.pngmart.com/files/22/F1-Ferrari-Transparent-PNG.png" alt="Ferrari F1 Car">
 		</div>
 		<div class="other-sections">
 			<div class="tile-column-1">
 				<a class="part-02 heading-text-link" href="/history">
-					<h2>02</h2>
+					<div>
+						<h2>02</h2>
+						<Icon data={angleDoubleRight} scale={2} />
+					</div>
 					<p>History</p>
-					<Icon data={caretDown} scale={2} />
 				</a>
 				<a class="part-03 heading-text-link" href="/circuits">
-					<h2>03</h2>
+					<div>
+						<h2>03</h2>
+						<Icon data={angleDoubleRight} scale={2} />
+					</div>
 					<p>Circuits</p>
-					<Icon data={caretDown} scale={2} />
 				</a>
 			</div>
 			<div class="tile-column-2">
 				<a class="part-04 heading-text-link" href="/drivers">
-					<h2>04</h2>
+					<div>
+						<h2>04</h2>
+						<Icon data={angleDoubleRight} scale={2} />
+					</div>
 					<p>Drivers</p>
-					<Icon data={caretDown} scale={2} />
 				</a>
 				<a class="part-05 heading-text-link" href="/about">
-					<h2>05</h2>
+					<div>
+						<h2>05</h2>
+						<Icon data={angleDoubleRight} scale={2} />
+					</div>
 					<p>About</p>
-					<Icon data={caretDown} scale={2} />
 				</a>
 			</div>
 		</div>
@@ -106,7 +114,7 @@
 	}
 
 	#header {
-		margin: 1rem 0rem 4rem;
+		margin: 4rem 0rem 4rem;
 		position: relative;
 		z-index: 5;
 	}
@@ -217,7 +225,7 @@
 		flex: 1;
 		background-color: #D96459;
 		border-radius: 0.5rem;
-		padding: 0rem 2rem 2rem;
+		padding: 1rem 2rem 2rem;
 		position: relative;
 		overflow: hidden;
 	}
@@ -241,6 +249,7 @@
 		font-family: "Space Mono", monospace;
 		font-size: 8rem;
 		font-weight: 700;
+		line-height: 1;
 	}
 
 	.part-01 .title-01 p {
@@ -282,6 +291,10 @@
 		border-radius: 0.5rem;
 		padding: 1rem;
 		transition: all 350ms ease-in-out;
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		gap: 0.5rem;
 	}
 
 	.part-02 {
@@ -298,23 +311,33 @@
 	}
 
 	.heading-text-link:hover {
-		scale: 1.1;
+		scale: 1.04;
 	}
 
 	.heading-text-link:not(:hover) {
 		opacity: 0.9;
 	}
 
+	.heading-text-link div {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-right: 2rem;
+	}
 
+	.heading-text-link div h2 {
+		font-family: "Space Mono", monospace;
+		font-weight: 700;
+		font-size: 6rem;
+		line-height: 1;
+	}
 
-
-
-
-
-
-
-
-
+	.heading-text-link p {
+		font-size: 1.5rem;
+		margin-left: 0.5rem;
+		font-family: "Space Mono", monospace;
+		font-weight: 700;
+	}
 
 
 
@@ -343,12 +366,20 @@
 		#content-overview {
 			flex-direction: column;
 		}
+		.part-01 img {
+			width: 60vw;
+			bottom: -4rem;
+			right: -8rem;
+		}
+
+
 	}
 
 	@media screen and (max-width: 768px) {
 		#header {
 			margin: 4rem 2.5rem 4rem;
 		}
+
 		.main-header {
 			flex-direction: column;
 			gap: 0;
@@ -357,5 +388,22 @@
 		.redbullrb19 {
 			display: none;
 		}
+
+		.heading-text-link div {
+			margin-right: 0;
+		}
+		.heading-text-link div h2 {
+			font-size: 3rem;
+		}
+		.heading-text-link p {
+			font-size: 1.25rem;
+		}
+		.part-01 img {
+			width: 70vw;
+			bottom: -3rem;
+			right: -4rem;
+		}
+
+
 	}
 </style>
