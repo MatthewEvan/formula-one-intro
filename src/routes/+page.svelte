@@ -5,6 +5,7 @@
 	import Icon from 'svelte-awesome';
 	import angleDown from 'svelte-awesome/icons/angleDown';
 	import angleDoubleRight from 'svelte-awesome/icons/angleDoubleRight';
+	import externalLink from 'svelte-awesome/icons/externalLink';
 </script>
 
 <div class="main-page">
@@ -169,7 +170,53 @@
 				</div>
 			</div>
 		</div>
-		<div class="main-race">main</div>
+		<div class="main-race">
+			<div class="layout-race">
+				<div class="main-race-desc">
+					<div class="main-title">
+						<h4>Main Race</h4>
+						<p>/meɪn reɪs/</p>
+					</div>
+					<p>
+						The day all Formula One fans are waiting for, which is the race day where all cars race
+						for almost 1+ hours of 50+ laps around a circuit to get the <b>First Place</b>
+					</p>
+					<div class="buttons-race">
+						<a href="/circuits" title="Go to Circuits Information">
+							Circuits
+							<Icon data={externalLink}/>
+						</a>
+						<a href="/drivers" title= "Go to Drivers Information">
+							Drivers
+							<Icon data={externalLink}/>
+						</a>
+					</div>
+				</div>
+				<div class="points-system">
+					<h5>Points System</h5>
+					<div class="points-list">
+						<ul>
+							<li><span>#01</span>25 points</li>
+							<li><span>#02</span>18 points</li>
+							<li><span>#03</span>15 points</li>
+							<li><span>#04</span>12 points</li>
+							<li><span>#05</span>10 points</li>
+						</ul>
+						<ul>
+							<li><span>#06</span>8 points</li>
+							<li><span>#07</span>6 points</li>
+							<li><span>#08</span>4 points</li>
+							<li><span>#09</span>2 points</li>
+							<li><span>#10</span>1 points</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="img-race">
+				<img src="https://media.formula1.com/image/upload/content/dam/fom-website/sutton/2022/Bahrain/Sunday/1386703905.jpg" alt="F1 Race 1" />
+				<img src="https://media.formula1.com/image/upload/f_auto/q_auto/v1681909842/calendar.jpg.transform/9col/image.jpg" alt="F1 Race 2" />
+			</div>
+		</div>
 	</section>
 </div>
 
@@ -404,7 +451,6 @@
 		flex-direction: column;
 		align-items: start;
 		gap: 4rem;
-		margin-inline: 2rem;
 	}
 
 	#howitworks .how-intro {
@@ -434,7 +480,7 @@
 		font-family: 'Space Mono', monospace;
 		line-height: 1;
 		margin-bottom: 1rem;
-		color: hsl(80, 100%, 59%)
+		color: hsl(80, 100%, 59%);
 	}
 	.how-intro-desc p {
 		font-size: 1.0625rem;
@@ -484,13 +530,13 @@
 		align-items: start;
 		gap: 4rem;
 	}
-	.free-practice, .qualifying {
+	.free-practice,
+	.qualifying {
 		flex: 1;
 		display: flex;
 		flex-direction: column;
 		align-items: start;
 		gap: 1rem;
-
 	}
 
 	.free-practice .fp-sessions img,
@@ -505,18 +551,18 @@
 		scale: 1.05;
 	}
 
-	.fp-quali .main-title {
+	.main-title {
 		display: flex;
 		flex-direction: column;
 		gap: 0.5rem;
 	}
-	.fp-quali .main-title h4 {
+	.main-title h4 {
 		font-size: 4rem;
 		line-height: 1;
-		font-family: "Space Mono", monospace;
-		color: hsl(80, 100%, 59%)
+		font-family: 'Space Mono', monospace;
+		color: hsl(80, 100%, 59%);
 	}
-	.fp-quali .main-title p {
+	.main-title p {
 		font-size: 1.5rem;
 	}
 
@@ -525,24 +571,28 @@
 		font-weight: 600;
 	}
 
-	.fp-sessions, .quali-sessions {
+	.fp-sessions,
+	.quali-sessions {
 		display: flex;
 		align-items: start;
 		justify-content: space-between;
 		gap: 2rem;
 	}
-	.fp-sessions ul, .quali-sessions ul {
+	.fp-sessions ul,
+	.quali-sessions ul {
 		display: flex;
 		flex-direction: column;
 		gap: 0.5rem;
 		list-style-type: none;
 	}
-	.fp-sessions ul li, .quali-sessions ul li {
+	.fp-sessions ul li,
+	.quali-sessions ul li {
 		display: flex;
 		align-items: center;
 		gap: 2rem;
 	}
-	.fp-sessions ul li span, .quali-sessions ul li span {
+	.fp-sessions ul li span,
+	.quali-sessions ul li span {
 		width: 2rem;
 		aspect-ratio: 1/1;
 		display: grid;
@@ -554,6 +604,123 @@
 		border-radius: 100%;
 	}
 
+	/* MAIN RACE SECTION  */
+	.main-race {
+		display: flex;
+		flex-direction: row;
+		align-items: start;
+		gap: 2rem;
+		margin-bottom: 4rem;
+	}
+	.layout-race {
+		display: flex;
+		flex: 2;
+		align-items: start;
+		flex-direction: row;
+	}
+	
+	.main-race-desc {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		flex: 1;
+	}
+	.main-race-desc p {
+		font-weight: 500;
+	}
+	.main-race-desc .buttons-race {
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+		margin-top: 1rem;
+	}
+	.buttons-race a {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		font-size: 1.2rem;
+		padding: 0.75rem 1.5rem;
+		border-radius: 0.5rem;
+		box-shadow: 1px 1px 8px hsla(0, 0%, 6%, 0.75);
+		transition: all 350ms ease-in-out;
+	}
+	.buttons-race a:nth-child(1) {
+		background-color: #d90b0b;
+	}
+	.buttons-race a:nth-child(2) {
+		background-color: #bf9663;
+	}
+	.buttons-race a:nth-child(1):hover {
+		scale: 1.025;
+		background-color: #e92020;
+	}
+	.buttons-race a:nth-child(2):hover {
+		scale: 1.025;
+		background-color: #e8b980;
+	}
+
+	.points-system {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+	}
+	.points-system h5 {
+		font-size: 2rem;
+		font-family: "Space Mono", monospace;
+		color: hsl(80, 100%, 59%);
+		font-weight: 400;
+	}
+	.points-list {
+		display: flex;
+		gap: 2rem;
+	}
+	.points-list ul {
+		list-style-type: none;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+	.points-list ul li {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		font-size: 1.25rem;
+	}
+	.points-list ul li span {
+		width: 4rem;
+		height: 2.5rem;
+		background-color: hsl(80, 100%, 34%);
+		font-size: 1.25rem;
+		font-weight: 700;
+		display: grid;
+		place-items: center;
+		border-radius: 0.5rem;
+		border: 2px solid hsl(0, 0%, 95%);
+		margin-right: 0.5rem;
+	}
+
+	.img-race {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+	}
+	.img-race img {
+		width: 30vw;
+		aspect-ratio: 4/1.5;
+		object-fit: cover;
+		object-position: bottom;
+		border-radius: 0.5rem;
+		opacity: 0.9;
+		transition: all 350ms ease-in-out;
+	}
+	.img-race img:hover {
+		opacity: 1;
+		scale: 1.05;
+	}
 
 	@media screen and (max-width: 1024px) {
 		.main-page {
@@ -585,7 +752,7 @@
 		}
 
 		#howitworks {
-			margin-inline: 1rem;
+			margin-inline: 2rem;
 		}
 		#howitworks .how-intro {
 			flex-direction: column;
@@ -605,6 +772,18 @@
 			width: 60vw;
 			object-fit: cover;
 			object-position: bottom;
+		}
+
+		.main-race {
+			flex-direction: column;
+			align-items: center;
+		}
+		.img-race {
+			margin-top: 2rem;
+			flex-direction: row;
+		}
+		.img-race img {
+			width: 40vw;
 		}
 	}
 
@@ -642,10 +821,23 @@
 			width: 80vw;
 		}
 
-		.fp-sessions, .quali-sessions {
+		.fp-sessions,
+		.quali-sessions {
 			display: flex;
 			flex-direction: column;
 			gap: 2rem;
+		}
+
+		.layout-race{
+			flex-direction: column;
+			align-items: center;
+			gap: 3rem;
+		}
+		.img-race {
+			flex-direction: column;
+		}
+		.img-race img {
+			width: 80vw;
 		}
 	}
 </style>
