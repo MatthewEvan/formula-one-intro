@@ -124,23 +124,50 @@
 			/>
 		</div>
 		<div class="practice-quali">
-			<div class="free-practice">
+			<div class="free-practice fp-quali">
 				<div class="main-title">
 					<h4>Free Practice</h4>
 					<p>/friː ˈpræktɪs/</p>
 				</div>
 				<p>
 					Free Practice are sessions that are used by teams to freely test their car settings and
-					capabilities around the track, to adjust the car to its best before the
-					main race and qualifying starts which will benefit the teams
+					capabilities around the track, to adjust the car to its best before the main race and
+					qualifying starts which will benefit the teams
 				</p>
-				<ul class="fp-sessions">
-					<li><span>1</span>Free Practice 1</li>
-					<li><span>2</span>Free Practice 2</li>
-					<li><span>3</span>Free Practice 3</li>
-				</ul>
+				<div class="fp-sessions">
+					<ul>
+						<li><span>1</span>Free Practice 1</li>
+						<li><span>2</span>Free Practice 2</li>
+						<li><span>3</span>Free Practice 3</li>
+					</ul>
+					<img
+						src="https://www.formula1.com/content/dam/fom-website/manual/Misc/2020/2020races/Austria/F1AUT20jm_101.jpg.transform/6col/image.jpg"
+						alt="Free Practice Session"
+					/>
+				</div>
 			</div>
-			<div class="qualifying">quali</div>
+			<div class="qualifying fp-quali">
+				<div class="main-title">
+					<h4>Qualifying</h4>
+					<p>/ˈkwɒlɪfaɪɪŋ/</p>
+				</div>
+				<p>
+					Qualifying is a session that is really important because this determines the position of
+					each driver's car in the race before from the first until the twentieth position.
+					Qualifying is also divided into three sessions
+				</p>
+				<div class="quali-sessions">
+					<ul>
+						<li><span>1</span>P20-P16 position determined</li>
+						<li><span>2</span>P15-P11 position determined</li>
+						<li><span>3</span>P10-P1 position determined</li>
+					</ul>
+					<img
+						src="https://img.sportstars.id//2021/07/WK781L/master_7nzC7bz437_1701.JPG"
+						alt="Qualifying Session"
+					/>
+				</div>
+			</div>
 		</div>
 		<div class="main-race">main</div>
 	</section>
@@ -407,6 +434,7 @@
 		font-family: 'Space Mono', monospace;
 		line-height: 1;
 		margin-bottom: 1rem;
+		color: hsl(80, 100%, 59%)
 	}
 	.how-intro-desc p {
 		font-size: 1.0625rem;
@@ -450,7 +478,81 @@
 		color: #ff716f;
 	}
 
-	
+	/* How it works Free Practice & Qualifying Sections */
+	.practice-quali {
+		display: flex;
+		align-items: start;
+		gap: 4rem;
+	}
+	.free-practice, .qualifying {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		gap: 1rem;
+
+	}
+
+	.free-practice .fp-sessions img,
+	.qualifying .quali-sessions img {
+		aspect-ratio: 4/3;
+		width: 20vw;
+		border-radius: 1rem;
+		transition: all 350ms ease-in-out;
+	}
+	.free-practice .fp-sessions img:hover,
+	.qualifying .quali-sessions img:hover {
+		scale: 1.05;
+	}
+
+	.fp-quali .main-title {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+	.fp-quali .main-title h4 {
+		font-size: 4rem;
+		line-height: 1;
+		font-family: "Space Mono", monospace;
+		color: hsl(80, 100%, 59%)
+	}
+	.fp-quali .main-title p {
+		font-size: 1.5rem;
+	}
+
+	.fp-quali p {
+		font-size: 1.05rem;
+		font-weight: 600;
+	}
+
+	.fp-sessions, .quali-sessions {
+		display: flex;
+		align-items: start;
+		justify-content: space-between;
+		gap: 2rem;
+	}
+	.fp-sessions ul, .quali-sessions ul {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		list-style-type: none;
+	}
+	.fp-sessions ul li, .quali-sessions ul li {
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+	}
+	.fp-sessions ul li span, .quali-sessions ul li span {
+		width: 2rem;
+		aspect-ratio: 1/1;
+		display: grid;
+		place-items: center;
+		background-color: hsl(80, 100%, 34%);
+		border: 2px solid hsl(0, 0%, 95%);
+		font-weight: 900;
+		font-size: 1.25rem;
+		border-radius: 100%;
+	}
 
 
 	@media screen and (max-width: 1024px) {
@@ -483,7 +585,7 @@
 		}
 
 		#howitworks {
-			margin-inline: 0.5rem;
+			margin-inline: 1rem;
 		}
 		#howitworks .how-intro {
 			flex-direction: column;
@@ -492,6 +594,17 @@
 		}
 		#howitworks .how-intro img {
 			width: 80vw;
+		}
+		.practice-quali {
+			flex-direction: column;
+			align-items: center;
+		}
+		.free-practice .fp-sessions img,
+		.qualifying .quali-sessions img {
+			aspect-ratio: 21/9;
+			width: 60vw;
+			object-fit: cover;
+			object-position: bottom;
 		}
 	}
 
@@ -522,6 +635,17 @@
 			width: 70vw;
 			bottom: -3rem;
 			right: -4rem;
+		}
+
+		.free-practice .fp-sessions img,
+		.qualifying .quali-sessions img {
+			width: 80vw;
+		}
+
+		.fp-sessions, .quali-sessions {
+			display: flex;
+			flex-direction: column;
+			gap: 2rem;
 		}
 	}
 </style>
