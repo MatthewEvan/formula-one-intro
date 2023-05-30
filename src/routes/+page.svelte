@@ -62,7 +62,10 @@
 			<a href="#howitworks">
 				<Icon data={angleDoubleRight} scale={2} />
 			</a>
-			<img src="https://www.pngmart.com/files/22/F1-Ferrari-Transparent-PNG.png" alt="Ferrari F1 Car">
+			<img
+				src="https://www.pngmart.com/files/22/F1-Ferrari-Transparent-PNG.png"
+				alt="Ferrari F1 Car"
+			/>
 		</div>
 		<div class="other-sections">
 			<div class="tile-column-1">
@@ -99,7 +102,48 @@
 			</div>
 		</div>
 	</section>
-	<h2>what</h2>
+	<section id="howitworks">
+		<div class="how-intro">
+			<div class="how-intro-desc">
+				<h3>How It Works</h3>
+				<p>
+					A regular Formula One Race Weekend usually consists of 3 sessions that's divided into 3
+					days of the weekend, which are Fridays, Saturdays, and Sundays with different excitement
+					and races altogether
+				</p>
+				<ul class="days-of-races">
+					<li>Race Weekend Activities</li>
+					<li><span>1</span>Fridays :<span>FP1 & FP2</span></li>
+					<li><span>2</span>Saturdays:<span>FP3 & Qualifying</span></li>
+					<li><span>3</span>Fridays :<span>Main Race Day</span></li>
+				</ul>
+			</div>
+			<img
+				src="https://cdn.crash.net/styles/article/s3/pa/3243856.0064.jpg?itok=3MaaXpcU"
+				alt="Racing Scenes"
+			/>
+		</div>
+		<div class="practice-quali">
+			<div class="free-practice">
+				<div class="main-title">
+					<h4>Free Practice</h4>
+					<p>/friː ˈpræktɪs/</p>
+				</div>
+				<p>
+					Free Practice are sessions that are used by teams to freely test their car settings and
+					capabilities around the track, to adjust the car to its best before the
+					main race and qualifying starts which will benefit the teams
+				</p>
+				<ul class="fp-sessions">
+					<li><span>1</span>Free Practice 1</li>
+					<li><span>2</span>Free Practice 2</li>
+					<li><span>3</span>Free Practice 3</li>
+				</ul>
+			</div>
+			<div class="qualifying">quali</div>
+		</div>
+		<div class="main-race">main</div>
+	</section>
 </div>
 
 <style>
@@ -214,7 +258,7 @@
 		display: flex;
 		align-items: stretch;
 		gap: 1.5rem;
-		margin-bottom: 6rem;
+		margin-bottom: 4rem;
 	}
 
 	#content-overview .part-01 {
@@ -223,7 +267,7 @@
 		align-items: start;
 		gap: 1rem;
 		flex: 1;
-		background-color: #D96459;
+		background-color: #d96459;
 		border-radius: 0.5rem;
 		padding: 1rem 2rem 2rem;
 		position: relative;
@@ -238,33 +282,28 @@
 		right: -15rem;
 		transform: scaleX(-1);
 	}
-
 	.part-01 .title-01 {
 		display: flex;
 		align-items: center;
 		gap: 2rem;
 	}
-
 	.part-01 .title-01 h2 {
-		font-family: "Space Mono", monospace;
+		font-family: 'Space Mono', monospace;
 		font-size: 8rem;
 		font-weight: 700;
 		line-height: 1;
 	}
-
 	.part-01 .title-01 p {
-		font-family: "Space Mono", monospace;
+		font-family: 'Space Mono', monospace;
 		font-size: 4rem;
 		line-height: 0.9;
 		font-weight: 700;
 	}
-
 	.description-01 {
 		margin: 0 4rem 2rem 0;
 	}
-
 	.part-01 > a {
-		padding: 0rem 2rem;
+		padding: 1rem 2rem;
 		display: grid;
 		place-items: center;
 		border-radius: 0.5rem;
@@ -278,14 +317,13 @@
 		align-items: stretch;
 		gap: 1.5rem;
 	}
-	
-	.tile-column-1,.tile-column-2 {
+	.tile-column-1,
+	.tile-column-2 {
 		display: flex;
 		flex: 1;
 		align-items: strecth;
 		gap: 1.5rem;
 	}
-
 	.heading-text-link {
 		flex: 1;
 		border-radius: 0.5rem;
@@ -296,51 +334,123 @@
 		justify-content: start;
 		gap: 0.5rem;
 	}
-
 	.part-02 {
-		background-color: #BF0A19;
+		background-color: #bf0a19;
 	}
 	.part-03 {
-		background-color: #D90B0B;
+		background-color: #d90b0b;
 	}
 	.part-04 {
-		background-color: #BF9663;
+		background-color: #bf9663;
 	}
 	.part-05 {
 		background-color: #191826;
 	}
-
 	.heading-text-link:hover {
 		scale: 1.04;
 	}
-
 	.heading-text-link:not(:hover) {
 		opacity: 0.9;
 	}
-
 	.heading-text-link div {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		margin-right: 2rem;
 	}
-
 	.heading-text-link div h2 {
-		font-family: "Space Mono", monospace;
+		font-family: 'Space Mono', monospace;
 		font-weight: 700;
 		font-size: 6rem;
 		line-height: 1;
 	}
-
 	.heading-text-link p {
 		font-size: 1.5rem;
 		margin-left: 0.5rem;
-		font-family: "Space Mono", monospace;
+		font-family: 'Space Mono', monospace;
 		font-weight: 700;
 	}
 
+	/* How it works Intro Section  */
+	#howitworks {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		gap: 4rem;
+		margin-inline: 2rem;
+	}
 
+	#howitworks .how-intro {
+		display: flex;
+		flex-direction: row;
+		align-items: start;
+		gap: 4rem;
+	}
+	#howitworks .how-intro img {
+		flex: 1;
+		width: 30vw;
+		height: auto;
+		border-radius: 0.5rem;
+	}
+	#howitworks .how-intro .how-intro-desc {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex: 1;
+		font-weight: 500;
+		gap: 1rem;
+	}
+	#howitworks .how-intro .how-intro-desc h3 {
+		font-size: 4rem;
+		text-align: center;
+		font-weight: 700;
+		font-family: 'Space Mono', monospace;
+		line-height: 1;
+		margin-bottom: 1rem;
+	}
+	.how-intro-desc p {
+		font-size: 1.0625rem;
+		margin-bottom: 0.5rem;
+	}
+	.days-of-races {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		gap: 0.75rem;
+	}
+	.days-of-races li {
+		list-style-type: none;
+		font-size: 1.2rem;
+		display: flex;
+		align-items: center;
+	}
 
+	.days-of-races li:nth-child(1) {
+		margin-bottom: 0.5rem;
+		font-size: 1.3rem;
+		font-weight: 700;
+	}
+	.days-of-races li span:nth-child(1) {
+		width: 2.5rem;
+		aspect-ratio: 1/1;
+		display: grid;
+		place-items: center;
+		border-radius: 100%;
+		background-color: #ff1801;
+		font-weight: 900;
+		font-size: 1.5rem;
+		margin-right: 1rem;
+		border: 2px solid hsl(0, 0%, 95%);
+	}
+
+	.days-of-races li span:nth-child(2) {
+		margin-left: 1rem;
+		font-size: 1.5rem;
+		font-weight: 800;
+		color: #ff716f;
+	}
+
+	
 
 
 	@media screen and (max-width: 1024px) {
@@ -372,7 +482,17 @@
 			right: -8rem;
 		}
 
-
+		#howitworks {
+			margin-inline: 0.5rem;
+		}
+		#howitworks .how-intro {
+			flex-direction: column;
+			align-items: center;
+			gap: 2rem;
+		}
+		#howitworks .how-intro img {
+			width: 80vw;
+		}
 	}
 
 	@media screen and (max-width: 768px) {
@@ -403,7 +523,5 @@
 			bottom: -3rem;
 			right: -4rem;
 		}
-
-
 	}
 </style>
