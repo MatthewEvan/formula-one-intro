@@ -42,16 +42,16 @@
 		</div>
 		<ul class="nav-links {ClickedNavLinks}">
 			<li>
-				<a href="/history">
-					<p>History</p>
+				<a href="/circuits">
+					<p>Circuits</p>
 					<div class="arrow-menu-links">
 						<Icon data={arrowRight} style="color: #f9f4f4;" />
 					</div>
 				</a>
 			</li>
 			<li>
-				<a href="/circuits">
-					<p>Circuits</p>
+				<a href="/teams">
+					<p>Teams</p>
 					<div class="arrow-menu-links">
 						<Icon data={arrowRight} style="color: #f9f4f4;" />
 					</div>

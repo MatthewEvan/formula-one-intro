@@ -70,19 +70,19 @@
 		</div>
 		<div class="other-sections">
 			<div class="tile-column-1">
-				<a class="part-02 heading-text-link" href="/history">
+				<a class="part-02 heading-text-link" href="/circuits">
 					<div>
 						<h2>02</h2>
 						<Icon data={angleDoubleRight} scale={2} />
 					</div>
-					<p>History</p>
+					<p>Circuits</p>
 				</a>
-				<a class="part-03 heading-text-link" href="/circuits">
+				<a class="part-03 heading-text-link" href="/teams">
 					<div>
 						<h2>03</h2>
 						<Icon data={angleDoubleRight} scale={2} />
 					</div>
-					<p>Circuits</p>
+					<p>Teams</p>
 				</a>
 			</div>
 			<div class="tile-column-2">
@@ -225,6 +225,9 @@
 	.main-page {
 		margin: 2rem 4rem;
 		color: hsl(0, 0%, 95%);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 
 	a {
@@ -232,7 +235,7 @@
 	}
 
 	#header {
-		margin: 4rem 0rem 4rem;
+		margin: 2rem 0rem 4rem;
 		position: relative;
 		z-index: 5;
 	}
@@ -752,7 +755,7 @@
 		}
 
 		#howitworks {
-			margin-inline: 2rem;
+			margin-inline: 3rem;
 		}
 		#howitworks .how-intro {
 			flex-direction: column;
@@ -816,6 +819,9 @@
 			right: -4rem;
 		}
 
+		#howitworks {
+			margin-inline: 0.5rem;
+		}
 		.free-practice .fp-sessions img,
 		.qualifying .quali-sessions img {
 			width: 80vw;

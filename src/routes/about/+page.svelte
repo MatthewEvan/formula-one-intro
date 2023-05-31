@@ -1,1 +1,1 @@
-Welcome to the About Section
+<p style="color: white">Welcome to the About Section</p>

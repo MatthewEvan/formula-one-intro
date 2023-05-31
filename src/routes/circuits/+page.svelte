@@ -1,1 +1,1 @@
-Welcome to the Circuits Section
+<p style="color: white">Welcome to the Circuits Section</p>
