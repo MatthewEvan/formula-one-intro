@@ -105,6 +105,7 @@
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 2.5rem;
+        margin-bottom: 4rem;
     }
     .team-tile {
         border-top: 2px solid hsl(0, 0%, 95%);
