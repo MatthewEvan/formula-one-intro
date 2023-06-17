@@ -33,18 +33,28 @@
 						/>
 					</svg>
 				</a>
-				<h1>
-					<span>Formula One</span>, the pinnacle of motorsport where every race is a battle of
-					technology and talent
-				</h1>
-				<p>
-					Firstly held at the Silverstone Circuit on 13th of May 1950, Formula One has since been
-					one of the most prestigious and innovative motorsport championship league with almost 171
-					teams and 774 drivers on 60+ different circuits around the world
-				</p>
+				<h1><span>Formula One</span></h1>
+				<h2>
+					The <span>pinnacle</span> of 
+					<span>motorsport</span> where every
+					race requires
+					<span>talent</span>
+					and <span>technophiles.</span>
+				</h2>
+				<div class="header-desc">
+					<div class="img-grid">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Johnny_Herbert_1995_Britain.jpg/330px-Johnny_Herbert_1995_Britain.jpg" alt="Silverstone Circuit 1">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/McLaren_MP4_at_Silverstone_Classic_2011.jpg/330px-McLaren_MP4_at_Silverstone_Classic_2011.jpg" alt="Silverstone Circuit 2">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Keke_Rosberg_Williams_FW10_1985_German_GP.jpg/330px-Keke_Rosberg_Williams_FW10_1985_German_GP.jpg" alt="Silverstone Circuit 3">
+					</div>
+					<p>
+						Firstly held at the Silverstone Circuit on 13th of May 1950, Formula One has since been
+						one of the most prestigious and innovative motorsport championship league with almost 171
+						teams and 774 drivers on 60+ different circuits around the world
+					</p>
+				</div>
 				<div class="discover-more">
-					<a href="#content-overview">Discover More</a>
-					<Icon data={angleDown} scale={1.5} style="color: hsl(0, 0%, 95%)" />
+					<a href="#content-overview">Discover More<Icon data={angleDown} scale={1.25} style="color: hsl(0, 0%, 95%)" /></a>
 				</div>
 			</div>
 			<img src={RedBullRB19} alt="Red Bull RB19" class="redbullrb19" />
@@ -184,11 +194,11 @@
 					<div class="buttons-race">
 						<a href="/circuits" title="Go to Circuits Information">
 							Circuits
-							<Icon data={externalLink}/>
+							<Icon data={externalLink} />
 						</a>
-						<a href="/drivers" title= "Go to Drivers Information">
+						<a href="/drivers" title="Go to Drivers Information">
 							Drivers
-							<Icon data={externalLink}/>
+							<Icon data={externalLink} />
 						</a>
 					</div>
 				</div>
@@ -213,8 +223,14 @@
 				</div>
 			</div>
 			<div class="img-race">
-				<img src="https://media.formula1.com/image/upload/content/dam/fom-website/sutton/2022/Bahrain/Sunday/1386703905.jpg" alt="F1 Race 1" />
-				<img src="https://media.formula1.com/image/upload/f_auto/q_auto/v1681909842/calendar.jpg.transform/9col/image.jpg" alt="F1 Race 2" />
+				<img
+					src="https://media.formula1.com/image/upload/content/dam/fom-website/sutton/2022/Bahrain/Sunday/1386703905.jpg"
+					alt="F1 Race 1"
+				/>
+				<img
+					src="https://media.formula1.com/image/upload/f_auto/q_auto/v1681909842/calendar.jpg.transform/9col/image.jpg"
+					alt="F1 Race 2"
+				/>
 			</div>
 		</div>
 	</section>
@@ -258,14 +274,14 @@
 		width: 15vw;
 		top: 5vh;
 		left: 2vw;
-		background-color: #8dc2f4;
+		background-color: #72f7e5;
 		opacity: 0.75;
 	}
 	.circle-bg span:nth-child(3) {
 		width: 40vw;
 		top: 8vh;
 		left: 20vw;
-		background-color: #f23d6d;
+		background-color: #6c0c26;
 		opacity: 0.75;
 	}
 
@@ -274,7 +290,7 @@
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
-		gap: 3rem;
+		gap: 5rem;
 	}
 	.header-text {
 		display: flex;
@@ -292,24 +308,74 @@
 		font-size: 3rem;
 		text-align: center;
 		font-weight: 700;
-		margin-bottom: 1rem;
 	}
 	.header-text h1 span {
-		font-size: 4rem;
+		font-size: 4.75rem;
 		font-weight: 900;
 		background-image: linear-gradient(-135deg, #ea1b00, #f91d00, #f21c00, #cb1700, #a91400);
 		-webkit-background-clip: text;
 		background-clip: text;
 		color: transparent;
 	}
-	.header-text p {
+	.header-text h2 {
+		font-size: 2rem;
+		text-align: center;
+		padding-bottom: 1.25rem;
+		border-bottom: 2px solid #dadada;
+		line-height: 1.05;
+	}
+
+	.header-text h2 span {
+		font-size: 2rem;
+		font-family: "Space Grotesk", monospace;
+		text-decoration-line: underline;
+		text-decoration-thickness: 0.25rem;
+	}
+	.header-text h2 span:nth-child(1) {
+		text-decoration-color: hsla(59, 100%, 62%, 0.5);
+	}
+	.header-text h2 span:nth-child(2) {
+		text-decoration-color: hsla(0, 100%, 47%, 0.5);
+	}
+	.header-text h2 span:nth-child(3) {
+		text-decoration-color: hsla(234, 98%, 53%, 0.5);
+	}
+	.header-text h2 span:nth-child(4) {
+		text-decoration-color: hsla(128, 100%, 47%, 0.5);
+	}
+
+	.header-desc {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+	.header-desc p {
 		color: #dadada;
 		line-height: 1.15;
 		font-weight: 500;
 		font-size: 1.1rem;
 		text-align: center;
 		margin-bottom: 1rem;
+		font-family: "Space Grotesk", monospace;
 	}
+	.header-desc .img-grid {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 0.75rem;
+		margin-inline: 1rem;
+		margin-top: 0.25rem;
+	}
+	.header-desc .img-grid img {
+		flex: 1;
+		display: block;
+		width: 100%;
+		height: 5rem;
+		object-fit: cover;
+		object-position: center;
+		border-radius: 0.25rem;
+	}
+	
 	.discover-more {
 		display: flex;
 		flex-direction: column;
@@ -324,6 +390,9 @@
 		background-image: linear-gradient(-135deg, #ea1b00, #f91d00, #f21c00, #cb1700, #a91400);
 		border-radius: 50rem;
 		transition: all 350ms ease-in-out;
+		display: flex;
+		gap: 0.75rem;
+		align-items: center;
 	}
 	.discover-more a:hover {
 		background-image: linear-gradient(-90deg, #ea1b00, #f91d00, #f21c00, #cb1700, #a91400);
@@ -621,7 +690,7 @@
 		align-items: start;
 		flex-direction: row;
 	}
-	
+
 	.main-race-desc {
 		display: flex;
 		flex-direction: column;
@@ -671,7 +740,7 @@
 	}
 	.points-system h5 {
 		font-size: 2rem;
-		font-family: "Space Grotesk", monospace;
+		font-family: 'Space Grotesk', monospace;
 		color: hsl(80, 100%, 59%);
 		font-weight: 400;
 	}
@@ -792,7 +861,7 @@
 
 	@media screen and (max-width: 768px) {
 		#header {
-			margin: 4rem 2.5rem 4rem;
+			margin: 2rem 2.5rem 4rem;
 		}
 
 		.main-header {
@@ -803,6 +872,14 @@
 		.redbullrb19 {
 			display: none;
 		}
+		.header-desc .img-grid {
+			display: flex;
+			flex-direction: column;
+		}
+		.header-desc .img-grid img {
+			aspect-ratio: 3/1;
+		}
+
 
 		.heading-text-link div {
 			margin-right: 0;
@@ -834,7 +911,7 @@
 			gap: 2rem;
 		}
 
-		.layout-race{
+		.layout-race {
 			flex-direction: column;
 			align-items: center;
 			gap: 3rem;
