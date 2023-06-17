@@ -365,13 +365,13 @@
 		gap: 2rem;
 	}
 	.part-01 .title-01 h2 {
-		font-family: 'Space Mono', monospace;
+		font-family: 'Space Grotesk', monospace;
 		font-size: 8rem;
 		font-weight: 700;
 		line-height: 1;
 	}
 	.part-01 .title-01 p {
-		font-family: 'Space Mono', monospace;
+		font-family: 'Space Grotesk', monospace;
 		font-size: 4rem;
 		line-height: 0.9;
 		font-weight: 700;
@@ -436,7 +436,7 @@
 		margin-right: 2rem;
 	}
 	.heading-text-link div h2 {
-		font-family: 'Space Mono', monospace;
+		font-family: 'Space Grotesk', monospace;
 		font-weight: 700;
 		font-size: 6rem;
 		line-height: 1;
@@ -444,7 +444,7 @@
 	.heading-text-link p {
 		font-size: 1.5rem;
 		margin-left: 0.5rem;
-		font-family: 'Space Mono', monospace;
+		font-family: 'Space Grotesk', monospace;
 		font-weight: 700;
 	}
 
@@ -480,7 +480,7 @@
 		font-size: 4rem;
 		text-align: center;
 		font-weight: 700;
-		font-family: 'Space Mono', monospace;
+		font-family: 'Space Grotesk', monospace;
 		line-height: 1;
 		margin-bottom: 1rem;
 		color: hsl(80, 100%, 59%);
@@ -562,7 +562,7 @@
 	.main-title h4 {
 		font-size: 4rem;
 		line-height: 1;
-		font-family: 'Space Mono', monospace;
+		font-family: 'Space Grotesk', monospace;
 		color: hsl(80, 100%, 59%);
 	}
 	.main-title p {
@@ -671,7 +671,7 @@
 	}
 	.points-system h5 {
 		font-size: 2rem;
-		font-family: "Space Mono", monospace;
+		font-family: "Space Grotesk", monospace;
 		color: hsl(80, 100%, 59%);
 		font-weight: 400;
 	}

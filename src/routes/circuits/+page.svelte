@@ -104,13 +104,13 @@
 	}
 	.heading h1 {
 		font-size: 5rem;
-		font-family: 'Space Mono', monospace;
+		font-family: 'Space Grotesk', monospace;
 		font-weight: 700;
 		line-height: 1;
 	}
     .heading p {
         font-size: 1.2rem;
-        font-family: 'Space Mono', monospace;
+        font-family: 'Space Grotesk', monospace;
 		font-weight: 400;
 		line-height: 1.2;
     }
@@ -138,7 +138,7 @@
     }
     .circuit-heading .number {
         font-size: 2.5rem;
-        font-family: 'Space Mono', monospace;
+        font-family: 'Space Grotesk', monospace;
 		font-weight: 700;
 		line-height: 1;
     }
@@ -150,7 +150,7 @@
     }
     .circuit-heading p {
         font-size: 1.25rem;
-        font-family: "Space Mono", monospace;
+        font-family: "Space Grotesk", monospace;
         line-height: 1.15;
     }
 

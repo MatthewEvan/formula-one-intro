@@ -127,13 +127,13 @@
     }
     .header h1 {
         font-size: 4.5rem;
-        font-family: "Space Mono", monospace;
+        font-family: "Space Grotesk", monospace;
         font-weight: 700;
         line-height: 1;
     }
     .header p {
         font-size: 1.2rem;
-        font-family: "Space Mono", monospace;
+        font-family: "Space Grotesk", monospace;
         font-weight: 400;
         line-height: 1.2;
     }
@@ -163,7 +163,7 @@
     }
     .racing-number {
         font-size: 2.5rem;
-        font-family: "Space Mono", monospace;
+        font-family: "Space Grotesk", monospace;
         font-weight: 700;
         line-height: 1; 
     }

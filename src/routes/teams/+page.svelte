@@ -90,13 +90,13 @@
         border-right: 8px solid #FF1801;
         border-top: 8px solid  #FF1801;
         border-radius: 0rem 2rem 0rem 0rem;
-        font-family: "Space Mono", monospace;
+        font-family: "Space Grotesk", monospace;
         font-weight: 700;
     }
     #header p {
         padding-bottom: 1rem;
         border-bottom: 4px solid hsl(0, 0%, 95%);
-        font-family: "Space Mono", monospace;
+        font-family: "Space Grotesk", monospace;
         font-weight: 400;
         font-size: 1.1rem;
     }
@@ -129,7 +129,7 @@
     }
     .team-number {
         font-size: 2rem;
-        font-family: "Space Mono", monospace;
+        font-family: "Space Grotesk", monospace;
         line-height: 1;
         font-weight: 700;
     }
@@ -140,7 +140,7 @@
     }
     .number .team-title {
         font-size: 1.5rem;
-        font-family: "Space Mono", monospace;
+        font-family: "Space Grotesk", monospace;
         font-weight: 700;
         line-height: 1;
     }

@@ -67,7 +67,7 @@
     }
     .about .description h1 {
         font-size: 2.25rem;
-        font-family: "Space Mono", monospace;
+        font-family: "Space Grotesk", monospace;
         font-weight: 700;
         line-height: 1;
     }
@@ -79,7 +79,7 @@
         font-weight: 500;
     }
     .about > p {
-        font-family: "Space Mono", monospace;
+        font-family: "Space Grotesk", monospace;
         font-weight: 400;
         line-height: 1.25;
     }
@@ -112,7 +112,7 @@
     }
     .message h2 {
         font-size: 2.25rem;
-        font-family: "Space Mono", monospace;
+        font-family: "Space Grotesk", monospace;
         font-weight: 700;
         line-height: 1;
     }
