@@ -35,26 +35,34 @@
 				</a>
 				<h1><span>Formula One</span></h1>
 				<h2>
-					The <span>pinnacle</span> of 
-					<span>motorsport</span> where every
-					race requires
+					The <span>pinnacle</span> of
+					<span>motorsport</span> where every race requires
 					<span>talent</span>
 					and <span>technophiles.</span>
 				</h2>
 				<div class="header-desc">
 					<div class="img-grid">
-						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Johnny_Herbert_1995_Britain.jpg/330px-Johnny_Herbert_1995_Britain.jpg" alt="Silverstone Circuit 1">
-						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/McLaren_MP4_at_Silverstone_Classic_2011.jpg/330px-McLaren_MP4_at_Silverstone_Classic_2011.jpg" alt="Silverstone Circuit 2">
-						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Keke_Rosberg_Williams_FW10_1985_German_GP.jpg/330px-Keke_Rosberg_Williams_FW10_1985_German_GP.jpg" alt="Silverstone Circuit 3">
+						<img
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Johnny_Herbert_1995_Britain.jpg/330px-Johnny_Herbert_1995_Britain.jpg"
+							alt="Silverstone Circuit 1"
+						>
+						<img
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/McLaren_MP4_at_Silverstone_Classic_2011.jpg/330px-McLaren_MP4_at_Silverstone_Classic_2011.jpg"
+							alt="Silverstone Circuit 2"
+						>
+						<img
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Keke_Rosberg_Williams_FW10_1985_German_GP.jpg/330px-Keke_Rosberg_Williams_FW10_1985_German_GP.jpg"
+							alt="Silverstone Circuit 3"
+						>
 					</div>
 					<p>
 						Firstly held at the Silverstone Circuit on 13th of May 1950, Formula One has since been
-						one of the most prestigious and innovative motorsport championship league with almost 171
-						teams and 774 drivers on 60+ different circuits around the world
+						one of the most prestigious and innovative motorsport championship league with almost
+						171 teams and 774 drivers on 60+ different circuits around the world
 					</p>
 				</div>
 				<div class="discover-more">
-					<a href="#content-overview">Discover More<Icon data={angleDown} scale={1.25} style="color: hsl(0, 0%, 95%)" /></a>
+					<a href="#content-overview">Discover More<Icon data={angleDown} scale={1.25} style="color: hsl(0, 0%, 95%)"/></a>
 				</div>
 			</div>
 			<img src={RedBullRB19} alt="Red Bull RB19" class="redbullrb19" />
@@ -67,8 +75,8 @@
 				<p>How It <br />Works<br /></p>
 			</div>
 			<p class="description-01">
-				All the rules and regulations that are implemented inside every Formula One races, so races
-				are fair and enjoyable for all participating in it
+				All events and preparations needed to be done by every teams in a usual F1 race weekend,
+				consisting of Free Practice, Qualifying, and the Main Race.
 			</p>
 			<a href="#howitworks">
 				<Icon data={angleDoubleRight} scale={2} />
@@ -112,6 +120,13 @@
 				</a>
 			</div>
 		</div>
+	</section>
+	<section id="racing-stripes">
+		<div class="racing-stripes-deco"></div>
+		<div class="racing-stripes-deco"></div>
+		<div class="racing-stripes-deco"></div>
+		<div class="racing-stripes-deco"></div>
+		<div class="racing-stripes-deco"></div>
 	</section>
 	<section id="howitworks">
 		<div class="how-intro">
@@ -327,7 +342,7 @@
 
 	.header-text h2 span {
 		font-size: 2rem;
-		font-family: "Space Grotesk", monospace;
+		font-family: 'Space Grotesk', monospace;
 		text-decoration-line: underline;
 		text-decoration-thickness: 0.25rem;
 	}
@@ -356,7 +371,7 @@
 		font-size: 1.1rem;
 		text-align: center;
 		margin-bottom: 1rem;
-		font-family: "Space Grotesk", monospace;
+		font-family: 'Space Grotesk', monospace;
 	}
 	.header-desc .img-grid {
 		display: flex;
@@ -375,7 +390,7 @@
 		object-position: center;
 		border-radius: 0.25rem;
 	}
-	
+
 	.discover-more {
 		display: flex;
 		flex-direction: column;
@@ -517,12 +532,40 @@
 		font-weight: 700;
 	}
 
+	/* Racing Stripes Decorations  */
+	#racing-stripes {
+		width: 100%;
+	}
+	#racing-stripes .racing-stripes-deco {
+		width: 100%;
+		height: 1rem;
+		background: repeating-linear-gradient(
+  			to right,
+ 			hsl(0, 0%, 95%),
+  			hsl(0, 0%, 95%) 40px,
+  			hsl(240, 11%, 7%) 40px,
+  			hsl(240, 11%, 7%) 80px
+		);
+	}
+	#racing-stripes .racing-stripes-deco:nth-child(2),
+	#racing-stripes .racing-stripes-deco:nth-child(4) {
+		background: repeating-linear-gradient(
+  			to right,
+			hsl(240, 11%, 7%),
+			hsl(240, 11%, 7%) 40px,
+			hsl(0, 0%, 95%) 40px,
+  			hsl(0, 0%, 95%) 80px
+		);
+	}
+
+
 	/* How it works Intro Section  */
 	#howitworks {
 		display: flex;
 		flex-direction: column;
 		align-items: start;
 		gap: 4rem;
+		margin-top: 4rem;
 	}
 
 	#howitworks .how-intro {
@@ -880,7 +923,6 @@
 			aspect-ratio: 3/1;
 		}
 
-
 		.heading-text-link div {
 			margin-right: 0;
 		}
@@ -894,6 +936,12 @@
 			width: 70vw;
 			bottom: -3rem;
 			right: -4rem;
+		}
+		.part-01 .title-01 h2 {
+			font-size: 6rem;
+		}
+		.part-01 .title-01 p {
+			font-size: 2.5rem;
 		}
 
 		#howitworks {
