@@ -158,7 +158,74 @@
 			</div>
 		</div>
 		<div class="event-description">
-			anjay
+			<div class="event-desc-section free-practice">
+				<div class="event-desc-text">
+					<div class="event-desc-header">
+						<h4>Free Practice</h4>
+						<h5>/friː ˈpræktɪs/</h5>
+					</div>
+					<div class="event-desc-detail">
+						<p>There are <b>three 60-minute free practice sessions</b> (two on Friday, one on Saturday) before an F1 Grand Prix where drivers and teams can run laps. 
+						These sessions are crucial because <b>teams need to perfect their car setups</b>, gather data for the race, and test the true pace of the car for qualifying.</p>
+						<div class="event-desc-conclusion">
+							<p>So, on a usual race weekend, there will be :</p>
+							<p>FRIDAYS : FP1 & FP2</p>
+							<p>SATURDAYS : FP3</p>
+						</div>
+					</div>
+				</div>
+				<img src="https://www.goodwood.com/globalassets/.road--racing/race/modern/2022/6-june/f1-2023-calendar/monaco-gp-2023-mark-sutton-mi-30052023.jpg?crop=(0,0,2600,1463)&width=1600" alt="F1 Free Practice at Monaco">
+			</div>
+			<div class="event-desc-section qualifying">
+				<div class="event-desc-text">
+					<div class="event-desc-header">
+						<h4>Qualifying</h4>
+						<h5>/ˈkwɒlɪfaɪɪŋ/</h5>
+					</div>
+					<div class="event-desc-detail">
+						<p>The whole qualifying session is used <b>to determine every driver’s starting position for the main race</b>, from the first position (P1) until the last position (P20). 
+						F1 uses a knock-out qualifying system that’s <b>divided into three sessions ranging from 12 minutes - 18 minutes</b>, where some drivers are eliminated </p>
+						<div class="event-desc-conclusion">
+							<p>So, on a usual race weekend, there will be :</p>
+							<ul>
+								<li>&#8226 Q1: P20-P16</li>
+								<li>&#8226 Q2: P15-P11</li>
+								<li>&#8226 Q3: P10-P1</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<img src="https://d3cm515ijfiu6w.cloudfront.net/wp-content/uploads/2023/01/31162230/abu-dhabi-2022-grid-planetf1.jpg" alt="F1 Qualifying at one of its circuit">
+			</div>
+			<div class="event-desc-section grand-prix">
+				<div class="event-desc-text">
+					<div class="event-desc-header">
+						<h4>Grand Prix</h4>
+						<h5>/ɡrænd priː/</h5>
+					</div>
+					<div class="event-desc-detail">
+						<div class="grand-prix-header">
+							<p>The main race everyone’s waiting for, where <b>every driver overtakes their rivals to be the first in the race</b>. P1 - P10 finishers gets some championship points that’ll determine their overall position</p>
+							<p>So, these are the points awarded to every driver based on their finised position:</p>
+						</div>
+						<div class="event-desc-conclusion">
+							<ul>
+								<li><span>#01</span>25 pts</li>
+								<li><span>#02</span>18 pts</li>
+								<li><span>#03</span>15 pts</li>
+								<li><span>#04</span>12 pts</li>
+								<li><span>#05</span>10 pts</li>
+								<li><span>#06</span>8 pts</li>
+								<li><span>#07</span>6 pts</li>
+								<li><span>#08</span>4 pts</li>
+								<li><span>#09</span>2 pts</li>
+								<li><span>#10</span>1 pts</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<img src="https://foxtelgroup.com.au/assets/article/mainImage/_1200xAUTO_fit_center-center_none/4k-main.jpg" alt="F1 Qualifying at one of its circuit">
+			</div>
 		</div>
 	</section>
 </div>
@@ -478,6 +545,7 @@
 		align-items: center;
 		gap: 2rem;
 		margin-top: 4rem;
+		margin-bottom: 2rem;
 	}
 	#howitworks > h3 {
 		font-size: 3.5rem;
@@ -538,8 +606,144 @@
 		object-fit: cover;
 		margin-bottom: 1rem
 	}
+
+	/* EVENT DESCRIPTIONS LAST PART  */
+	.event-description {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	.event-desc-section {
+		display: flex;
+		gap: 3rem;
+		align-items: center;
+		background-color: hsla(0, 100%, 30%, 0.5);
+		border-radius: 0.5rem;
+		padding: 1.5rem 3rem;
+	}
+	.event-desc-section img {
+		flex: 1;
+		width: 20vw;
+		aspect-ratio: 2/1;
+		border-radius: 0.25rem;
+		object-fit: cover;
+	}
+	.qualifying {
+		flex-direction: row-reverse;
+		background-color: hsla(0, 100%, 40%, 0.75)
+	}
+
+	.event-desc-text {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		gap: 1.5rem;
+		flex: 2
+	}
+	.event-desc-header {
+		display: flex;
+		align-items: end;
+		gap: 1rem;
+	}
+	.event-desc-header h4 {
+		font-size: 3rem;
+		line-height: 1;
+	}
+	.event-desc-header h5 {
+		font-size: 1.75rem;
+		font-weight: 600;
+		color: #C2F86B;
+	}
+
+	.event-desc-detail {
+		display: flex;
+		align-items: start;
+		gap: 1.5rem;
+	}
+	.event-desc-detail * {
+		font-family: "Space Grotesk", monospace;
+	}
+	.event-desc-detail p {
+		flex: 2;
+	}
+	.event-desc-conclusion {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		gap: 0.5rem;
+	}
+
+	.event-desc-conclusion p:nth-child(2),
+	.event-desc-conclusion p:nth-child(3) {
+		font-size: 1.25rem;
+		font-weight: 700;
+		line-height: 1;
+	}
+	.event-desc-conclusion p:nth-child(2) {
+		color: #CDFBCC;
+	}
+	.event-desc-conclusion p:nth-child(3) {
+		color: #FBE0CC;
+	}
+
+	/* QUALIFYING DESCRIPTIONS  */
+	.qualifying .event-desc-conclusion ul {
+		display: flex;
+		flex-direction: column;
+		gap: 0.2rem;
+		list-style-type: none;
+		font-weight: 700;
+		line-height: 1;
+	}
+	.qualifying .event-desc-conclusion ul li {
+		font-size: 1.25rem;
+	}
+	.qualifying .event-desc-conclusion ul li:nth-child(1) {
+		color: #CDFBCC;
+	}
+	.qualifying .event-desc-conclusion ul li:nth-child(2) {
+		color: #F7FBCC;
+	}
+	.qualifying .event-desc-conclusion ul li:nth-child(3) {
+		color: #F7CCFB;
+	}
 	
-	
+	/* GRAND PRIX SECTION  */
+	.grand-prix .event-desc-detail {
+		align-items: center;
+	}
+	.grand-prix .event-desc-detail .grand-prix-header {
+		flex: 1;
+	}
+	.grand-prix .event-desc-conclusion {
+		flex: 1;
+	}
+	.grand-prix .event-desc-conclusion ul {
+		list-style: none;
+		columns: 2;
+		column-gap: 1.25rem;
+	}
+	.grand-prix .event-desc-conclusion ul li {
+		display: flex;
+		align-items: center;
+		gap: 0.35rem;
+		font-size: 1.25rem;
+		font-weight: 700;
+		color: #CDFBCC;
+	}
+	.grand-prix .event-desc-conclusion ul li span {
+		color: #4fff4c;
+		padding-right: 0.5rem;
+	}
+	.grand-prix-header {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
 	@media screen and (max-width: 1024px) {
 		.main-page {
 			margin: 2rem;
@@ -590,6 +794,22 @@
 		.event-tiles:nth-child(2) {
 			flex-direction: row-reverse
 		}
+
+		.event-desc-text {
+			flex: 1;
+		}
+		.event-desc-section img {
+			flex: 1;
+			width: 35vw;
+			aspect-ratio: 1/1;
+		}
+		.event-desc-header {
+			flex-direction: column;
+			align-items: start;
+		}
+		.event-desc-detail {
+			flex-direction: column;
+		}
 	}
 
 	@media screen and (max-width: 768px) {
@@ -635,7 +855,7 @@
 		}
 
 		#howitworks {
-			margin-inline: 0.5rem;
+			margin: 3rem 2rem 2rem 2rem;
 		}
 		.event-tiles {
 			flex-direction: column;
@@ -647,6 +867,24 @@
 			flex: 1;
 			width: 65vw;
 			aspect-ratio: 5/2.5;
+		}
+
+		.event-desc-section {
+			flex-direction: column;
+			padding: 1.5rem 1.5rem;
+		}
+		.qualifying {
+			flex-direction: column;
+		}
+		.event-desc-section img {
+			width: 75vw;
+			aspect-ratio: 5/2;
+		}
+		.event-desc-header h4 {
+			font-size: 2.5rem;
+		}
+		.event-desc-header h5 {
+			font-size: 1.5rem;
 		}
 	}
 </style>
